@@ -107,22 +107,22 @@
       border-radius: 10px;
       background: #f9f9f9;
     }
-    .rsvp-button {
+    .rsvp-button, .photo-button {
       display: inline-block;
       padding: 1rem 2rem;
       font-size: 1.5rem;
       font-weight: bold;
-      color: #000000;
-      background: #ffffff;
+      color: #ffffff;
+      background: #000000;
       border: 2px solid #000000;
       border-radius: 10px;
       text-decoration: none;
       margin: 1rem 0;
       font-family: 'Eagle Lake', serif;
     }
-    .rsvp-button:hover {
-      background: #000000;
-      color: #ffffff;
+    .rsvp-button:hover, .photo-button:hover {
+      background: #ffffff;
+      color: #000000;
     }
     footer {
       text-align: center;
@@ -166,9 +166,8 @@
   <!-- Instructions for Guests -->
   <section id="instructions">
     <h2>Instrukce pro hosty</h2>
-    <p>Zde budou instrukce pro hosty.</p>
     <p>Přidávejte své fotky z naší svatby do našeho alba:</p>
-    <a href="https://photos.app.goo.gl/dn7CHL6n5ZSKfYEi6" target="_blank">Fotoalbum</a>
+    <a href="https://photos.app.goo.gl/dn7CHL6n5ZSKfYEi6" target="_blank" class="photo-button">Fotoalbum</a>
     <h3>Harmonogram dne</h3>
     <div class="schedule">
       <div class="schedule-item"><strong>12:00</strong> - Příjezd hostů</div>
@@ -186,4 +185,3 @@
   </footer>
 </body>
 </html>
-
