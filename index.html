@@ -11,40 +11,63 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      background: #f9f5e3;
+      background: #f5e6f7;
+      color: black;
     }
     header {
-      background: url('IMG_6183.JPG') no-repeat center center/cover;
+      background: url('cover-photo.jpg') no-repeat center center/cover;
       height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #f9f5e3;
+      color: #f5e6f7;
       text-align: center;
-      border-bottom: 5px solid #8b4513;
+      position: relative;
     }
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3.5rem;
-      text-shadow: 2px 2px 4px #8b4513;
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+      color: #f5e6f7;
+    }
+    nav {
+      background: #8b4513;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
     }
     section {
       padding: 2rem;
+      text-align: center;
+      background: url('leaves-border.png') no-repeat center top/contain;
     }
     h2 {
       font-family: 'Playfair Display', serif;
       font-size: 2.5rem;
       color: #8b4513;
+      margin-bottom: 1rem;
     }
     p {
       font-size: 1.2rem;
       line-height: 1.6;
-      color: #4d3319;
-    }
-    .story, .location, .apps {
-      margin-bottom: 2rem;
-      border-bottom: 2px solid #8b4513;
-      padding-bottom: 1rem;
+      color: black;
     }
     .apps a {
       display: block;
@@ -76,6 +99,12 @@
   </style>
 </head>
 <body>
+  <nav>
+    <a href="#story">Náš příběh</a>
+    <a href="#location">Místo svatby</a>
+    <a href="#apps">Aplikace</a>
+  </nav>
+
   <button class="lang-toggle" onclick="toggleLanguage()">Přepnout jazyk / Switch Language</button>
 
   <!-- Welcome Page -->
@@ -93,7 +122,7 @@
   </header>
 
   <!-- Our Story -->
-  <section class="story">
+  <section id="story" class="story">
     <div id="czech">
       <h2>Náš příběh</h2>
       <p>Potkali jsme se v krásný podzimní den a okamžitě jsme si porozuměli díky naší lásce k fyzice, cestování a dobrému vínu. Od té chvíle začala naše společná cesta plná smíchu, dobrodružství a vzájemné podpory.</p>
@@ -105,7 +134,7 @@
   </section>
 
   <!-- Location -->
-  <section class="location">
+  <section id="location" class="location">
     <div id="czech">
       <h2>Místo svatby</h2>
       <p>Nemůžeme se dočkat, až s vámi oslavíme na tomto místě:</p>
@@ -123,23 +152,12 @@
   </section>
 
   <!-- Useful Apps -->
-  <section class="apps">
-    <div id="czech">
-      <h2>Užitečné aplikace pro tento den</h2>
-      <p>Využijte tyto aplikace během naší svatby:</p>
-      <a href="https://www.google.com/maps">Google Maps - Navigace</a>
-      <a href="https://www.ubereats.com">Uber Eats - Doručení jídla</a>
-      <a href="https://www.spotify.com">Spotify - Svatební playlist</a>
-      <a href="https://www.weddingwire.com">WeddingWire - Správa hostů</a>
-    </div>
-    <div id="english" class="hidden">
-      <h2>Helpful Apps for the Day</h2>
-      <p>Make the most of our wedding with these apps:</p>
-      <a href="https://www.google.com/maps">Google Maps - Navigation</a>
-      <a href="https://www.ubereats.com">Uber Eats - Food Delivery</a>
-      <a href="https://www.spotify.com">Spotify - Wedding Playlist</a>
-      <a href="https://www.weddingwire.com">WeddingWire - Guest Management</a>
-    </div>
+  <section id="apps" class="apps">
+    <h2>Užitečné aplikace</h2>
+    <a href="https://www.google.com/maps">Google Maps - Navigace</a>
+    <a href="https://www.ubereats.com">Uber Eats - Doručení jídla</a>
+    <a href="https://www.spotify.com">Spotify - Svatební playlist</a>
+    <a href="https://www.weddingwire.com">WeddingWire - Správa hostů</a>
   </section>
 
   <!-- Footer -->
