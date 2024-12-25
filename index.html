@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Wedding / Naše Svatba</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header {
+      background: url('cover-photo.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+    }
+    section {
+      padding: 2rem;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+    }
+    .story, .location, .apps {
+      margin-bottom: 2rem;
+    }
+    .apps a {
+      display: block;
+      margin: 0.5rem 0;
+      text-decoration: none;
+      color: #007BFF;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #f4f4f4;
+    }
+    .hidden {
+      display: none;
+    }
+    .lang-toggle {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 10px;
+      cursor: pointer;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <button class="lang-toggle" onclick="toggleLanguage()">Switch Language</button>
+
+  <!-- Welcome Page -->
+  <header>
+    <div id="english">
+      <h1>Welcome to Our Wedding</h1>
+      <p>Join us as we celebrate our love!</p>
+      <p>Karla & Filip</p>
+    </div>
+    <div id="czech" class="hidden">
+      <h1>Vítejte na naší svatbě</h1>
+      <p>Připojte se k nám při oslavě naší lásky!</p>
+      <p>Karla & Filip</p>
+    </div>
+  </header>
+
+  <!-- Our Story -->
+  <section class="story">
+    <div id="english">
+      <h2>Our Story</h2>
+      <p>We met on a beautiful autumn day and instantly connected over our shared love for physics, travel, and fine wine. From that moment, our journey together began, filled with laughter, adventure, and endless support.</p>
+    </div>
+    <div id="czech" class="hidden">
+      <h2>Náš příběh</h2>
+      <p>Potkali jsme se v krásný podzimní den a okamžitě jsme si porozuměli díky naší lásce k fyzice, cestování a dobrému vínu. Od té chvíle začala naše společná cesta plná smíchu, dobrodružství a vzájemné podpory.</p>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section class="location">
+    <div id="english">
+      <h2>Wedding Location</h2>
+      <p>We can't wait to celebrate with you at our venue:</p>
+      <p><strong>Chateau Winery, Moravia</strong></p>
+      <p>123 Vineyard Lane, Moravia, Czech Republic</p>
+      <p>Date: October 10th, 2024</p>
+    </div>
+    <div id="czech" class="hidden">
+      <h2>Místo svatby</h2>
+      <p>Nemůžeme se dočkat, až s vámi oslavíme na tomto místě:</p>
+      <p><strong>Zámecké Vinařství, Morava</strong></p>
+      <p>123 Vineyard Lane, Morava, Česká republika</p>
+      <p>Datum: 10. října 2024</p>
+    </div>
+  </section>
+
+  <!-- Useful Apps -->
+  <section class="apps">
+    <div id="english">
+      <h2>Helpful Apps for the Day</h2>
+      <p>Make the most of our wedding with these apps:</p>
+      <a href="https://www.google.com/maps">Google Maps - Navigation</a>
+      <a href="https://www.ubereats.com">Uber Eats - Food Delivery</a>
+      <a href="https://www.spotify.com">Spotify - Wedding Playlist</a>
+      <a href="https://www.weddingwire.com">WeddingWire - Guest Management</a>
+    </div>
+    <div id="czech" class="hidden">
+      <h2>Užitečné aplikace pro tento den</h2>
+      <p>Využijte tyto aplikace během naší svatby:</p>
+      <a href="https://www.google.com/maps">Google Maps - Navigace</a>
+      <a href="https://www.ubereats.com">Uber Eats - Doručení jídla</a>
+      <a href="https://www.spotify.com">Spotify - Svatební playlist</a>
+      <a href="https://www.weddingwire.com">WeddingWire - Správa hostů</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Karla & Filip's Wedding | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    function toggleLanguage() {
+      document.querySelectorAll('#english').forEach(el => el.classList.toggle('hidden'));
+      document.querySelectorAll('#czech').forEach(el => el.classList.toggle('hidden'));
+    }
+  </script>
+</body>
+</html>
