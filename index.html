@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Wedding / Naše Svatba</title>
+  <title>Naše Svatba / Our Wedding</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     body {
@@ -11,6 +11,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      background: #f9f5e3;
     }
     header {
       background: url('IMG_6735.jpeg') no-repeat center center/cover;
@@ -18,33 +19,45 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
+      color: #f9f5e3;
       text-align: center;
+      border-bottom: 5px solid #8b4513;
     }
     header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 3rem;
+      font-size: 3.5rem;
+      text-shadow: 2px 2px 4px #8b4513;
     }
     section {
       padding: 2rem;
     }
     h2 {
       font-family: 'Playfair Display', serif;
-      font-size: 2rem;
+      font-size: 2.5rem;
+      color: #8b4513;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #4d3319;
     }
     .story, .location, .apps {
       margin-bottom: 2rem;
+      border-bottom: 2px solid #8b4513;
+      padding-bottom: 1rem;
     }
     .apps a {
       display: block;
       margin: 0.5rem 0;
       text-decoration: none;
-      color: #007BFF;
+      color: #8b4513;
+      font-weight: bold;
     }
     footer {
       text-align: center;
       padding: 1rem;
-      background: #f4f4f4;
+      background: #8b4513;
+      color: #f9f5e3;
     }
     .hidden {
       display: none;
@@ -55,71 +68,63 @@
       right: 10px;
       padding: 10px;
       cursor: pointer;
-      background: #007BFF;
-      color: white;
+      background: #8b4513;
+      color: #f9f5e3;
       border: none;
       border-radius: 5px;
     }
   </style>
 </head>
 <body>
-  <button class="lang-toggle" onclick="toggleLanguage()">Switch Language</button>
+  <button class="lang-toggle" onclick="toggleLanguage()">Přepnout jazyk / Switch Language</button>
 
   <!-- Welcome Page -->
   <header>
-    <div id="english">
-      <h1>Welcome to Our Wedding</h1>
-      <p>Join us as we celebrate our love!</p>
-      <p>Karla & Filip</p>
-    </div>
-    <div id="czech" class="hidden">
+    <div id="czech">
       <h1>Vítejte na naší svatbě</h1>
       <p>Připojte se k nám při oslavě naší lásky!</p>
+      <p>Karla & Filip</p>
+    </div>
+    <div id="english" class="hidden">
+      <h1>Welcome to Our Wedding</h1>
+      <p>Join us as we celebrate our love!</p>
       <p>Karla & Filip</p>
     </div>
   </header>
 
   <!-- Our Story -->
   <section class="story">
-    <div id="english">
-      <h2>Our Story</h2>
-      <p>We met on a beautiful autumn day and instantly connected over our shared love for physics, travel, and fine wine. From that moment, our journey together began, filled with laughter, adventure, and endless support.</p>
-    </div>
-    <div id="czech" class="hidden">
+    <div id="czech">
       <h2>Náš příběh</h2>
       <p>Potkali jsme se v krásný podzimní den a okamžitě jsme si porozuměli díky naší lásce k fyzice, cestování a dobrému vínu. Od té chvíle začala naše společná cesta plná smíchu, dobrodružství a vzájemné podpory.</p>
+    </div>
+    <div id="english" class="hidden">
+      <h2>Our Story</h2>
+      <p>We met on a beautiful autumn day and instantly connected over our shared love for physics, travel, and fine wine. From that moment, our journey together began, filled with laughter, adventure, and endless support.</p>
     </div>
   </section>
 
   <!-- Location -->
   <section class="location">
-    <div id="english">
-      <h2>Wedding Location</h2>
-      <p>We can't wait to celebrate with you at our venue:</p>
-      <p><strong>Chateau Winery, Moravia</strong></p>
-      <p>123 Vineyard Lane, Moravia, Czech Republic</p>
-      <p>Date: October 10th, 2024</p>
-    </div>
-    <div id="czech" class="hidden">
+    <div id="czech">
       <h2>Místo svatby</h2>
       <p>Nemůžeme se dočkat, až s vámi oslavíme na tomto místě:</p>
       <p><strong>Zámecké Vinařství, Morava</strong></p>
       <p>123 Vineyard Lane, Morava, Česká republika</p>
       <p>Datum: 10. října 2024</p>
     </div>
+    <div id="english" class="hidden">
+      <h2>Wedding Location</h2>
+      <p>We can't wait to celebrate with you at our venue:</p>
+      <p><strong>Chateau Winery, Moravia</strong></p>
+      <p>123 Vineyard Lane, Moravia, Czech Republic</p>
+      <p>Date: October 10th, 2024</p>
+    </div>
   </section>
 
   <!-- Useful Apps -->
   <section class="apps">
-    <div id="english">
-      <h2>Helpful Apps for the Day</h2>
-      <p>Make the most of our wedding with these apps:</p>
-      <a href="https://www.google.com/maps">Google Maps - Navigation</a>
-      <a href="https://www.ubereats.com">Uber Eats - Food Delivery</a>
-      <a href="https://www.spotify.com">Spotify - Wedding Playlist</a>
-      <a href="https://www.weddingwire.com">WeddingWire - Guest Management</a>
-    </div>
-    <div id="czech" class="hidden">
+    <div id="czech">
       <h2>Užitečné aplikace pro tento den</h2>
       <p>Využijte tyto aplikace během naší svatby:</p>
       <a href="https://www.google.com/maps">Google Maps - Navigace</a>
@@ -127,11 +132,19 @@
       <a href="https://www.spotify.com">Spotify - Svatební playlist</a>
       <a href="https://www.weddingwire.com">WeddingWire - Správa hostů</a>
     </div>
+    <div id="english" class="hidden">
+      <h2>Helpful Apps for the Day</h2>
+      <p>Make the most of our wedding with these apps:</p>
+      <a href="https://www.google.com/maps">Google Maps - Navigation</a>
+      <a href="https://www.ubereats.com">Uber Eats - Food Delivery</a>
+      <a href="https://www.spotify.com">Spotify - Wedding Playlist</a>
+      <a href="https://www.weddingwire.com">WeddingWire - Guest Management</a>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2024 Karla & Filip's Wedding | All Rights Reserved</p>
+    <p>&copy; 2024 Karla & Filip's Wedding | Všechna práva vyhrazena</p>
   </footer>
 
   <script>
