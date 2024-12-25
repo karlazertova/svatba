@@ -4,9 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Naše Svatba / Our Wedding</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     body {
       font-family: 'Roboto', sans-serif;
@@ -20,6 +18,7 @@
       background: url('IMG_6183.JPG') no-repeat center center/cover;
       height: 100vh;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       color: #ffffff;
@@ -37,20 +36,20 @@
       z-index: 0;
     }
     header h1 {
-  position: relative;
-  z-index: 1;
-  color: #ffffff;
-  font-size: 4rem; /* Larger main title */
-  font-weight: bold; /* Optional for bold text */
-}
-
-header p {
-  position: relative;
-  z-index: 1;
-  color: #ffffff;
-  font-size: 2rem; /* Larger subtitle */
-  margin: 0.5rem 0; /* Adds spacing between lines */
-}
+      position: relative;
+      z-index: 1;
+      color: #ffffff;
+      font-size: 4rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    header p {
+      position: relative;
+      z-index: 1;
+      color: #ffffff;
+      font-size: 2rem;
+      margin: 0.5rem 0;
+    }
     nav {
       background: #000000;
       padding: 1rem;
@@ -99,29 +98,26 @@ header p {
     <a href="#instructions">Instrukce pro hosty</a>
   </nav>
 
-<header>
-  <h1>Vítejte na naší svatbě</h1>
-  <p>
-    <span>Karla & Filip</span><br>
-    <span>21. června 202ř</span>
-  </p>
-</header>
+  <header>
+    <h1>Vítejte na naší svatbě</h1>
+    <p>Karla & Filip</p>
+    <p>10. října 2024</p>
+  </header>
 
   <!-- Important Information -->
   <section id="info">
     <h2>Důležité informace</h2>
-    <p>Srdečně vás všechny zveme na naší svatbu, jež se uspořádá 21. června 2025 na statku na Bříství u Křečhoře.</p>
-    
-  <!-- Google Maps Embed -->
-  <iframe 
-    src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10251.79780671391!2d15.104395275405812!3d50.031042994239385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c14a61945f885%3A0x1708134d8d3b5d54!2zT3ZvY27DqSBTYWR5IELFmcOtc3R2w60!5e0!3m2!1sen!2scz!4v1735141972901!5m2!1sen!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" 
-    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-</section>
+    <p>Zde budou důležité informace o svatbě.</p>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10251.79780671391!2d15.104395275405812!3d50.031042994239385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c14a61945f885%3A0x1708134d8d3b5d54!2zT3ZvY27DqSBTYWR5IELFmcOtc3R2w60!5e0!3m2!1sen!2scz!4v1735141972901!5m2!1sen!2scz" 
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
 
   <!-- About Us -->
   <section id="about">
     <h2>O nás</h2>
-    <p>A jak to všechno začalo? Poznali jsme se jednoho osudového večera 8. prostince 2021 v našem onlíbeném Baru č. 10 na Strahově.</p>
+    <p>Zde bude text o nás.</p>
   </section>
 
   <!-- Instructions for Guests -->
@@ -132,7 +128,8 @@ header p {
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 202ř Karla & Filip's Wedding | Všechna práva vyhrazena</p>
+    <p>&copy; 2024 Karla & Filip's Wedding | Všechna práva vyhrazena</p>
   </footer>
 </body>
 </html>
+
