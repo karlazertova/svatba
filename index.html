@@ -131,13 +131,35 @@
       background: #000000;
       color: #ffffff;
     }
+
+
     .about-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: left;
-      gap: 20px;
-    }
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.about-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h3 {
+    margin-top: 20px;
+}
+
+.about-text p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
     .gift-button {
       background: #c8a2c8; /* Lilac color */
       border-color: #c8a2c8;
@@ -145,10 +167,6 @@
     .rsvp-button:hover, .photo-button:hover, .gift-button:hover {
       background: #ffffff;
       color: #000000;
-    }
-    .about-container img {
-      width: 400px;
-      border-radius: 10px;
     }
     .about-container div {
       text-align: center; /* Centers the text */
@@ -182,25 +200,61 @@
       width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
     </iframe>
 
-    <h3>Seznam darů</h3>
-    <p>Podívejte se na náš svatební seznam dárků zde:</p>
-    <a href="https://www.myregistry.com/wedding-registry/karla-zertova-and-filip-petr-sek-/4628578" target="_blank" class="gift-button">Seznam darů</a>
-  </section>
+   </section>
 
 
-  <!-- About Us -->
-  <section id="about">
+<!-- About Us -->
+<section id="about">
     <h2>O nás</h2>
     <div class="about-container">
-      <img src="aboutus1.png" alt="O nás">
-      <div>
-        <h3>Jak jsme se poznali</h3>
-        <p>Naše první setkání nastalo 8. prosince 2021 v magickém Baru 10.</p>
-        <h3>Jak jsme se zasnoubili</h3>
-        <p>Zásnuby proběhly v nádherné atmosféře pod hvězdami...</p>
-      </div>
+        <img src="aboutus1.png" alt="O nás">
+        <div class="about-text">
+            <h3>Jak jsme se poznali</h3>
+            <p>Byl osmý prosinec roku 2021, chladný večer, kdy se Karla a Filip, každý zvlášť a se svou partou, rozhodli zavítat do legendární hospody Desítka na Strahově. Ačkoliv o sobě už nějaké ty historky slyšeli – Karla o Filipovi od Lýdy a Filip o Karle bůhvíodkud – nikdy se osobně nepotkali. A podle těch několika otřesných fotek, které se k nim dostaly, si ani moc nedokázali představit, jak ten druhý vlastně vypadá.</p>
+            
+            <p>Večer plynul klasickým strahovským tempem – smích, pivo a debaty o všem a o ničem. Karla si v jednu chvíli povzdechla ke svému kamarádovi Filipovi aka "Světlu":  
+            „Hele, proč jsi mi vlastně ještě nepředstavil toho slavného Petráska, o kterém mi vyprávěla Lýda?“</p>
+
+            <p>Světlo se jen tajemně usmál, beze slova odešel… a za chvíli se vrátil. A přivedl sebou právě toho legendárního Petráska.</p>
+
+            <p>Seznámili se. Prvních pár vět bylo spíš zdvořilostních, ale Filip se místo návratu ke své skupině rozhodl posadit rovnou ke Karle ke stolu. Jen co se usadil, začali se kolem něj postupně stahovat jeho studenti – očividně měl jakési neviditelné gravitační pole, které přitahovalo akademickou mládež. Karla sledovala, jak se debata kolem něj rozbíhá, ale do rozhovoru se s ním sama moc nezapojovala.</p>
+
+            <p>Jenže pak se Filip najednou zvedl, podal Karle šipky a beze slov jí je vtiskl do ruky – jasná výzva. Karla se jen usmála, přijala a během pár minut ho v šipkách rozdrtila. Filip, jako správný gentleman, bez okolků dodržel hospodskou etiku – poražený kupuje vítězi panáka. A tím to celé začalo.</p>
+
+            <p>Jedna sklenička vedla ke druhé, konverzace plynula čím dál uvolněněji, smích střídal smích… a najednou bylo šest ráno. Venku se začalo rozednívat a oběma bylo jasné, že se jim ani trochu nechce od sebe odejít. Tak spolu strávili další čtyři dny v jakési zvláštní bublině, ve které neexistoval čas, povinnosti ani svět venku. Měli být ve škole – Karla měla učit, Filip měl zkoušet – ale všechno to šlo stranou. První rande se tak neplánovaně protáhlo na čtyři dny.</p>
+
+            <p><strong>A zbytek? To už je jen legenda.</strong></p>
+
+            <h3>Jak jsme se zasnoubili</h3>
+            <p>Bylo 7. července 2024, krásný letní den – a zároveň Karliny narozeniny. Filip věděl, že si Karlička vždycky přála piknik u Ženevského jezera, a tak se rozhodl jí tento sen splnit. Připravil všechno do posledního detailu – v nádherném parku, rozkvetlém tisíci květinami, nachystal deku, spoustu dobrot, pití a dokonce i balónky, aby byla atmosféra ještě kouzelnější.</p>
+
+            <p>Po pohodové oslavě, kdy se občerstvili a Karla sfoukla svíčky, přišel čas na dárky. Filip měl připravené čtyři malé překvapení:</p>
+
+            <ul>
+                <li><strong>Cyklistické rukavice</strong> – protože Karla tvrdila, že bude jezdit na kole do práce (což se samozřejmě nikdy nestalo).</li>
+                <li><strong>AirTags od O2</strong> – protože Karla neustále něco ztrácí, a hlavně proto, že O2 byl její software, ve kterém musela psát bakalářku, takže k němu měla velmi silný a velmi smíšený vztah.</li>
+                <li><strong>Malý plyšák Medvídek Pú</strong> – protože Karlička absolutně miluje Medvídka Pú.</li>
+                <li><strong>Malá krabička…</strong></li>
+            </ul>
+
+            <p>Když Karla otevřela poslední dárek, uvnitř byl nádherný prstýnek ve tvaru nekonečna, vysázený 11 černými brilianty. Filip se na ni podíval a s úsměvem řekl:</p>
+
+            <p><strong>"K tomuhle dárku je taková otázka… Vezmeš si mě?"</strong></p>
+
+            <p>Karla, úplně překvapená a dojatá, začala plakat. Mezi vzlyky nějak zamumlala "jo", ale Filip to neslyšel. Tak se na ni podíval a trochu zmateně se zeptal ještě jednou:</p>
+
+            <p><strong>"Tak co to teda bude?"</strong></p>
+
+            <p>Tentokrát už se Karlička usmála přes slzy a jasně řekla <strong>"ANO"</strong>.</p>
+
+            <p>Byl to nádherný okamžik plný emocí, radosti a lásky. Po chvilce, kdy si užívali ten magický moment, rozhlásili radostnou zprávu rodině a pak se, jako správní vědci, vydali do muzea vědy, aby zakončili den přesně tak, jak se na ně sluší.</p>
+
+            <p><strong>A tak začala jejich nová společná kapitola. 💍💖</strong></p>
+        </div>
     </div>
-  </section>
+</section>
+
+
 
   <!-- Instructions for Guests -->
   <section id="instructions">
@@ -209,12 +263,13 @@
     <a href="https://photos.app.goo.gl/dn7CHL6n5ZSKfYEi6" target="_blank" class="photo-button">Fotoalbum</a>
     <h3>Harmonogram dne</h3>
     <div class="schedule">
-      <div class="schedule-item"><strong>12:00</strong> - Příjezd hostů</div>
-      <div class="schedule-item"><strong>13:00</strong> - Obřad</div>
-      <div class="schedule-item"><strong>14:00</strong> - Přípitek a focení</div>
-      <div class="schedule-item"><strong>15:00</strong> - Oběd</div>
-      <div class="schedule-item"><strong>18:00</strong> - První tanec</div>
-      <div class="schedule-item"><strong>20:00</strong> - Zábava a tanec</div>
+      <div class="schedule-item"><strong>11:00</strong> - Příjezd hostů</div>
+      <div class="schedule-item"><strong>12:00</strong> - Obřad</div>
+      <div class="schedule-item"><strong>13:00</strong> - Přípitek a oběd</div>
+      <div class="schedule-item"><strong>15:00</strong> - První tanec a zábava</div>
+      <div class="schedule-item"><strong>18:00</strong> - Večerní raut</div>
+      <div class="schedule-item"><strong>19:00</strong> - Tanec a zábava</div>
+      <div class="schedule-item"><strong>22:30</strong> - Ohňostroj</div>
     </div>
   </section>
 
