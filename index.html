@@ -131,21 +131,30 @@
       background: #000000;
       color: #ffffff;
     }
-
-
-    .about-container {
-    display: flex;
-    align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    gap: 20px;
+.about-image {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.about-container img {
-    width: 300px;
+.about-image img {
+    width: 100%;
+    max-width: 800px;
     height: auto;
     border-radius: 10px;
 }
+
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-text {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+
 
 .about-text {
     max-width: 600px;
@@ -202,16 +211,17 @@
 
    </section>
 
-
 <!-- About Us -->
 <section id="about">
+    <div class="about-image">
+        <img src="aboutus1.png" alt="O nás">
+    </div>
     <h2>O nás</h2>
     <div class="about-container">
-        <img src="aboutus1.png" alt="O nás">
         <div class="about-text">
             <h3>Jak jsme se poznali</h3>
             <p>Byl osmý prosinec roku 2021, chladný večer, kdy se Karla a Filip, každý zvlášť a se svou partou, rozhodli zavítat do legendární hospody Desítka na Strahově. Ačkoliv o sobě už nějaké ty historky slyšeli – Karla o Filipovi od Lýdy a Filip o Karle bůhvíodkud – nikdy se osobně nepotkali. A podle těch několika otřesných fotek, které se k nim dostaly, si ani moc nedokázali představit, jak ten druhý vlastně vypadá.</p>
-            
+
             <p>Večer plynul klasickým strahovským tempem – smích, pivo a debaty o všem a o ničem. Karla si v jednu chvíli povzdechla ke svému kamarádovi Filipovi aka "Světlu":  
             „Hele, proč jsi mi vlastně ještě nepředstavil toho slavného Petráska, o kterém mi vyprávěla Lýda?“</p>
 
